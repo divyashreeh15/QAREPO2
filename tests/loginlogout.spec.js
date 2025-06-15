@@ -9,5 +9,12 @@ test('Login and Logout Test Script', async({page})=>{
     await page.locator("//input[@placeholder='Password']").fill("manager")
     await page.locator("//div[normalize-space()='Login']").click()
     await page.waitForTimeout(4000)
+
+
+    //Logout Action
+    
+    await page.waitForTimeout(4000)
+    await page.locator("//a[@id='logoutLink']").click()
+    await page.waitForTimeout(4000)
  
 })
